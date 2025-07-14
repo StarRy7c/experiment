@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "name": "Alex_Sports",
+      "badge": "VIP",
+      "comments": [
+        "What a goal! ⚽️",
+        "This is why I love this sport.",
+        "Incredible performance by the team."
+      ]
+    },
+    {
+      "name": "MovieFan2024",
+      "badge": "PRO",
+      "comments": [
+        "This scene is a masterpiece.",
+        "The acting is top-notch. 🎬",
+        "I could watch this all day."
+      ]
+    },
+    {
+      "name": "LiveStream_King",
+      "badge": "MOD",
+      "comments": [
+        "Stream is running smoothly for everyone.",
+        "Enjoy the show, everyone! 🍿",
+        "No spoilers in the chat, please."
+      ]
+    },
+    {
+      "name": "SportsLover",
+      "badge": "VIP",
+      "comments": [
+        "That was a close call!",
+        "Come on, defense!",
+        "The crowd is going wild! 📣"
+      ]
+    },
+    {
+      "name": "TechGuru99",
+      "badge": "PRO",
+      "comments": [
+        "The video quality is superb. 💻",
+        "Running this on a 4K monitor, looks great.",
+        "No lag at all, impressive."
+      ]
+    },
+    {
+      "name": "StreamWatcher",
+      "badge": "USER",
+      "comments": [
+        "Hello everyone!",
+        "Thanks for the stream!",
+        "This is awesome. 😎"
+      ]
+    }
+  ]
+}
