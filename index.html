@@ -49,31 +49,7 @@
       }
     }
 
-    /* Overlay Strip to hide top of iframe content */
-    .overlay-strip-top {
-      position: absolute;
-      top: 25px; /* This should match the iframe's padding-top or actual top position */
-      left: 0;
-      width: 100%;
-      height: 60px; /* Adjust this height to cover the desired part of the iframe */
-      background-color: white; /* Or any color that matches your page background */
-      z-index: 10; /* Ensure it's above the iframe */
-      border-top-left-radius: 12px; /* Match iframe border-radius */
-      border-top-right-radius: 12px; /* Match iframe border-radius */
-    }
 
-    /* Overlay Strip to hide bottom of iframe content */
-    .overlay-strip-bottom {
-      position: absolute;
-      bottom: 70px; /* Match the margin/padding below the iframe */
-      left: 0;
-      width: 100%;
-      height: 95px; /* Adjust this height to cover the desired part of the iframe */
-      background-color: white; /* Or any color that matches your page background */
-      z-index: 19; /* Ensure it's above the iframe */
-      border-bottom-left-radius: 12px; /* Match iframe border-radius */
-      border-bottom-right-radius: 12px; /* Match iframe border-radius */
-    }
 
     /* Live Chat Section */
     .live-chat-container {
@@ -347,7 +323,7 @@
     /* Hide the entire page on desktop screens */
     @media (min-width: 769px) { /* Adjust this breakpoint as needed for your definition of "desktop" */
       body {
-        display: none;
+        display: block;
       }
     }
 
@@ -377,9 +353,6 @@
 <body>
 
   <div class="video-container">
-    <div class="overlay-strip-top"></div>
-    <div class="overlay-strip-bottom"></div>
-
     <iframe
       id="contentFrame"
       sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
@@ -548,7 +521,7 @@
       for (let i = 0; i < 5; i++) {
         setTimeout(() => {
           addMessage();
-        }, i * 1000);
+        }, i * 800);
       }
       
       // Start regular message interval
@@ -556,8 +529,8 @@
         showTypingIndicator();
         setTimeout(() => {
           addMessage();
-        }, 2500);
-      }, 15000); // Every 15 seconds
+        }, 3000); // 3 seconds after typing starts
+      }, 8000); // Every 8 seconds
     }
 
     // Original popup functions
